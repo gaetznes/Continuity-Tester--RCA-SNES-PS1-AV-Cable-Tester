@@ -55,7 +55,7 @@ Though, currently it's not a high priority.
 
 3q Hex Nuts : 4-5mm long for mounting
 
-I will upload the stl files once i've verified fitment. 
+# I will upload the stl files once i've verified fitment. 
 
 Note: Only Gerber file will be available at this time.
 
