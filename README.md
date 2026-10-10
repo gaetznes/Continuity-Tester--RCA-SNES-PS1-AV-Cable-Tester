@@ -1,4 +1,4 @@
-# RCA-Phono-Continuity-Tester-SNES-N64-NGC-PS1-PS2-PS3
+Continuity-Tester--RCA-SNES-PS1-AV-Cable-Tester
 Simple Portable Continuity Tester for Testing RCA, SNES Style, PS1 Style AV Cables
 
 Project design is still being tested. The current gerber files are for the board hosted here and first two images shown below. 
