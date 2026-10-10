@@ -22,7 +22,7 @@ Due to "Forward Voltage Issues", Don't Use all Green LED's, with the Diodes. To 
 I'm going to play around with more resistor values. See if I can make this work the way I want it to as listed in the parts below. 
 Though, currently it's not a high priority. 
 
-# **For Nintendo and PlayStation AV Testing you will need the follow parts**
+# **Parts list for Console AV Cable Testing**
 
   -Avaliable from Aliexpress
 
