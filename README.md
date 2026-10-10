@@ -22,7 +22,7 @@ Due to "Forward Voltage Issues", Don't Use all Green LED's, with the Diodes. To 
 I'm going to play around with more resistor values. See if I can make this work the way I want it to as listed in the parts below. 
 Though, currently it's not a high priority. 
 
-**For Nintendo and PlayStation AV Testing you will need the follow parts**
+# **For Nintendo and PlayStation AV Testing you will need the follow parts**
 
   -Avaliable from Aliexpress
 
@@ -39,11 +39,11 @@ Though, currently it's not a high priority.
 
 1q 2032 Battery Holder (BS-3) Builders Choice or Tabbed 2032 Battery
 
-  **Salvaged Parts**
+#  **Salvaged Parts**
 
 1q ps1 slim av connector  
 
-  **Optional Depending on desired functionality**
+#  **Optional Depending on desired functionality**
 
   -Aliexpress
 
