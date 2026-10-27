@@ -22,6 +22,12 @@ Instruction & Led Notes are below.
 
 <img width="2857" height="2335" alt="5797944e1af2603203c4059e3795b77b" src="https://github.com/user-attachments/assets/44ff05f1-457d-488c-a949-406165e427c3" />
 
+# Mini v1.2.9 SMT THT Hybrid RCA / 90 Degree revision 
+
+<img width="2857" height="2335" alt="0555b01e0eb3f33450d77647dac2be6d" src="https://github.com/user-attachments/assets/0e5467b1-7ffa-4a5b-a947-5edfbac67f80" />
+
+<img width="2857" height="2335" alt="5a0ba4776f6eee91a193013088d7c63c" src="https://github.com/user-attachments/assets/a7c22336-3927-429f-87c5-a0c57c36f9fd" />
+
 Previous version tested working, though with layout issues. Plus I used 100ohm resistors and found the green to strong.
 <img width="2048" height="1536" alt="dd91cf26-2530-4b87-a052-bc48b03566e9" src="https://github.com/user-attachments/assets/63e04480-aa89-4bcb-9b5b-b3b860154a58" />
 
