@@ -44,7 +44,7 @@ Though, currently it's not a high priority.
 
 11q 2.2k 0805 Resistors
 
-3q rcj-021 / rcj-011 for In-put
+3q rcj-021 / RCJ-011-SMT-TR for In-put
 
 1q 2032 Battery Holder (BS-3) Builders Choice or Tabbed 2032 Battery
 
