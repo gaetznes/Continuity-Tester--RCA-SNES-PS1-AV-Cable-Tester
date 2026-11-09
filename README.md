@@ -1,6 +1,91 @@
 # **Continuity-Tester--RCA-SNES-PS1-AV-Cable-Tester**
 
+Portable Continuity Tester w/ Protection
+
+Mini v1.3.X
+
+Parts, instructions, description below
+
+<img width="1918" height="892" alt="Mini v1 3 x" src="https://github.com/user-attachments/assets/9e7004cc-74eb-4cfd-9e4c-df278eba1ac2" />
+<img width="1918" height="892" alt="Mini v1 3 x1" src="https://github.com/user-attachments/assets/91ee9bc2-8cb2-4f98-ba75-e992bfd2ffc0" />
+
+# Description
+
+This device is intended for quick testing of PS1/2/3, Snes/N64/NGC & RCA AV Cables.
+
+Led's are aligned in a column, with clear indicators to what each line is. Ex: Luma, GND, Componsite Video (C.Video)
+
+Depending on your desired configuration. The GND signal can be divided into 3 sperate feeds.
+
+Protection details are detailed blow in quality of life features.
+
+# Instructions, namely for the LED placement:
+
+If you install Leds at "Individual.GND Check", Use the jumper pads next to GND LED By-Pass. 
+Use a 2.2k Resistor next to GND. If not, solder all 3 Jumper pads next to "Individual.GND Check", 
+& place a Led below the GND LED By-Pass, w/ 750r (Not a 2.2k resistor). Otherwise, for consistency use all Red, w/ 750r.
+
+The purpose of this is to verify the GND or shield on each individual RCA cable is intact. 
+
+# Parts
+1q 12mm x 12mm x 5mm Momentary Switch
+
+10-13q 3mm Leds total (Use only Red) 
+
+10-11q 750r (Opt. 1q 2.2K): Type 0805 Resistors 
+
+4q rcj-011 (3 for In-Put and 1 for Out-Put)     
+
+1q ps1 slim av connector  
+
+1q 2032 (BS-3) or Tabbed
+
+*Optional Components, with reasons listed below* 
+
+2q MAX40200AUK+T 
+
+1q MCP-111-270, 1q .1uf Ceramic Capacitor, 1q 750r, & 1q 3mm LED
+
+1q Si2301 & 1k to 10k : Type 0805 Resistors 
+
+# Optional quality of life features, for safety and battery life.
+
+They are as followed:
+
+# 1: Low Battery Warning Circuit
+
+Contains a MCP-111-270, .1uf Ceramic Capacitor, 750r Resistor & Modern 3mm Led
+
+When the battery drains down to about 2.63v, the led will light, indicating you should consider replaced the battery
+
+# 2: Back Feeding Protection 
+
+Two MAX40200AUK+T are ideal diodes, to prevent the mistake of inserting a PS1 or Snes AV Cable into the lower Output only RCA port. 
+
+Preventing the signal from back feeding into the device. 
+
+These replaced the 1n5817 or SS12 Diodes, due to the desire to increase the headroom for the Low Battery Warning Circuit. As they consumed to much current. 
+
+# 3: Revere Polarity Protection
+
+The Si2301 and a 1k to 10K resistor are placed between the battery and the momentary switch. 
+
+The idea here is that if a battery is installed in reverse, this will protect the MAX40200, MCP-111 from frying. 
+
+In addition to protecting other components.
+
+
+# Legacy Files, 
+
+For Legacy reason I'm leaving the following up. 
+Though everything works. I've update the design to be more robust in the above version.
+
 Simple Portable Continuity Tester for Testing RCA, SNES Style, PS1 Style AV Cables
+Mini 1.2.1 through to 1.2.9. 
+
+1.2.9 is probably the best version, however this version is what led me to discover not all 3mm leds are really 3mm leds and can be larger that 3.2mm round. 
+So 1.3.x was designed with this in mind. Plus the added protection for the chance of human error.
+
 
 Project design is still being tested.
 
@@ -44,9 +129,7 @@ Though, currently it's not a high priority.
 1q 12mm x 12mm x 5mm Momentary Switch
 
 11-13q 3mm Leds total (Use all Red, for even brightness and longer battery life)
- - 3 Red (Indvidual GND Check) 
- - 1 Orange (Composite Video) 
- - 9 Green (Everything else)  
+Testing has lead to the descision that green is not viable to use with 3v 2032. 
 
 11q 2.2k 0805 Resistors
 
