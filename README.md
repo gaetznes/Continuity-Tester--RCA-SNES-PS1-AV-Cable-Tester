@@ -48,7 +48,7 @@ The purpose of this is to verify the GND or shield on each individual RCA cable 
 
 1q Si2301 & 1k to 10k : Type 0805 Resistors 
 
-# Optional quality of life features, for safety and battery life.
+# Optional quality of life features, for safety & battery life.
 
 They are as followed:
 
