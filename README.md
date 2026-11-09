@@ -17,7 +17,7 @@ Led's are aligned in a column, with clear indicators to what each line is. Ex: L
 
 Depending on your desired configuration. The GND signal can be divided into 3 sperate feeds.
 
-Protection details are detailed blow in quality of life features.
+Protection details are listed below, in quality of life features.
 
 # Instructions, namely for the LED placement:
 
