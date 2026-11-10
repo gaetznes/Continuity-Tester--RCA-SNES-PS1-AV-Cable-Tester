@@ -1,6 +1,6 @@
 # **Continuity-Tester--RCA-SNES-PS1-AV-Cable-Tester**
 
-Portable Continuity Tester w/ Protection
+Portable Continuity Tester w/ Protection (Ordered and waiting to test)
 
 Mini v1.3.X
 
