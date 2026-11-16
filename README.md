@@ -95,6 +95,19 @@ The remaining two MAX40200AUK+T in combination with momentary switch 2 and 3. Ar
 
 The use of a PESD3V3S2UT {a uni-directional double ESD (ElectroStatic Discharge) protection diode array} that is connected to the out-put rca phono jack on the bottom right. Though this maybe overkill. I figured that portion of the circuit is directly connected to the first two MAX40200AUK+T. I would add a bit of protection. In addition to the two 100r resistor that are in series between the Phono Jack and PESD3V...
 
+# Bare Bones Build
+
+You only want to test snes Composite Video, Audio Left and Right Cables. You do not care about ps1, rca or any quality of life add-ons, like indivudial GND check Cross Short detection or reverse polarity protection. 
+
+Here is what you will do and need. 
+
+You will solder the jumper (Reverse Polarity Protection By-Pass) on the back of the board, next to the positive terminal of the battery.  
+
+Then solder 1 momentary switch for on/off function, SW1. Solder the jumper (Cross Short By-Pass Jumper) within the SW2 footprint.
+
+Solder 4 resistors next to C.Video, A.R, A.L and GND. Solder 4 Red Leds next to them. Then solder 3 Right Angle RCA Jacks at the top of the board.
+
+Finally install the battery and apply your conformal coating. Make sure to tape off you buttons, rca ports and snes edge connector.
 
 # Legacy Files, 
 
