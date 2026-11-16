@@ -2,7 +2,17 @@
 
 Portable Continuity Tester w/ Protection (Ordered and waiting to test)
 
-Mini v1.3.X
+I'm currently work on a v1.6, Changing more of the THT to SMD, adding 2 more MAX40200 and 2x momentary buttons to create a cross-short test. 
+
+The Cross Short Test makes sure that the GND line and Signal line are not shorting. The two max40200 acts as a switch to cut either the GND or Signal test voltage from reaching the led. The goal is to introduce a forward voltage problem. Where the 2032 battery (Nominally around 2.8-3v) can not power 2 led's in series. As it would need about 3.6-4v, and is more that what a fresh 2032 can provide. So realistically, the Siginal Only switch is required for this. Though, I left in the GND only there incase it proves useful in the future.
+
+Example: Your depressing the on/off momentary switch, all 6 lights are on for your C.Video A.L, A.R, and 3 GND lights turn on. You depress the Siginal ONLY Momentary switch, activating the shunt and cutting/turning off the 3 GND Lights off. Leaving 3 of the 6 lights on. Everything is working as intended. 
+
+Alternatively, with a bad cable. You depress the Signal Only Switch. This deactivates the GND voltage to 3 of the leds. However, as intended you've caused the desired forward voltage issue with the cross short.  In this case the 3v is traveling through the 750r to the first led(Audio Right), then within the cable is shorting to the gnd line. Which connects to one of the last led before going to the negative battery terminal. Neither led light up. Hurray we have eliminated a bad cable from our pile of cables.  
+
+Previous designed only checked to see if the cable was making continuity. This revision allows use to eliminate false positives. That would have otherwise not worked when hooked up. i.e: If a Composite signal is connected to gnd, it can cause a black screen or other artifacts that would generally be seen as issues with the console or device that generates or receives the image. 
+
+Mini v1.3.X HAD DEFECTS, I removed the Zip file
 
 Parts, instructions, description below
 
