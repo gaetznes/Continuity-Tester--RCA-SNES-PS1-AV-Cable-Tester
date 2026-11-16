@@ -35,7 +35,7 @@ Use a 2.2k Resistor next to GND. If not, solder all 3 Jumper pads next to "Indiv
 The purpose of this is to verify the GND or shield on each individual RCA cable is intact. The 3 separate leds for GND, also allow for cross short testing. 
 
 # Parts
-2-3q 12mm x 12mm x 5mm Momentary Switch
+2-3q 12mm x 12mm x 5mm Momentary Switch (Power On/Off, GND Only, Signal Only)
 
 11-14q SMD Leds total (Use only Red) : 1206
 
