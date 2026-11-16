@@ -97,7 +97,7 @@ The use of a PESD3V3S2UT {a uni-directional double ESD (ElectroStatic Discharge)
 
 # Bare Bones Build
 
-You only want to test snes Composite Video, Audio Left and Right Cables. You do not care about ps1, rca or any quality of life add-ons, like indivudial GND check Cross Short detection or reverse polarity protection. 
+You only want to test snes Composite Video, Audio Left, and Right Cables. You do not care about ps1, rca or any quality of life add-ons, like indivudial GND check, Cross Short detection, or reverse polarity protection etc. 
 
 Here is what you will do and need. 
 
@@ -107,7 +107,7 @@ Then solder 1 momentary switch for on/off function, SW1. Solder the jumper (Cros
 
 Solder 4 resistors next to C.Video, A.R, A.L and GND. Solder 4 Red Leds next to them. Then solder 3 Right Angle RCA Jacks at the top of the board.
 
-Finally install the battery and apply your conformal coating. Make sure to tape off you buttons, rca ports and snes edge connector.
+Finally install the battery and apply your conformal coating. Make sure to tape off you buttons, rca ports and snes edge connector. Preferable your leds as well. Only do so after it's been tested working. 
 
 # Legacy Files, 
 
