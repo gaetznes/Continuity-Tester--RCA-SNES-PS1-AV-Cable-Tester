@@ -12,12 +12,7 @@ Alternatively, with a bad cable. You depress the Signal Only Switch. This deacti
 
 Previous designed only checked to see if the cable was making continuity. This revision allows use to eliminate false positives. That would have otherwise not worked when hooked up. i.e: If a Composite signal is connected to gnd, it can cause a black screen or other artifacts that would generally be seen as issues with the console or device that generates or receives the image. 
 
-Mini v1.3.X HAD DEFECTS, I removed the Zip file
-
-Parts, instructions, description below
-
-<img width="1918" height="892" alt="Mini v1 3 x" src="https://github.com/user-attachments/assets/9e7004cc-74eb-4cfd-9e4c-df278eba1ac2" />
-<img width="1918" height="892" alt="Mini v1 3 x1" src="https://github.com/user-attachments/assets/91ee9bc2-8cb2-4f98-ba75-e992bfd2ffc0" />
+Anticipation of testing to be completed around late December. 
 
 # Description
 
@@ -25,7 +20,7 @@ This device is intended for quick testing of PS1/2/3, Snes/N64/NGC & RCA AV Cabl
 
 Led's are aligned in a column, with clear indicators to what each line is. Ex: Luma, GND, Componsite Video (C.Video)
 
-Depending on your desired configuration. The GND signal can be divided into 3 sperate feeds.
+Depending on your desired configuration. The GND signal can be divided into 3 sperate feeds. (Which is required for Cross Short Testing)
 
 Protection details are listed below, in quality of life features.
 
@@ -35,16 +30,20 @@ If you install Leds at "Individual.GND Check", Use the jumper pads next to GND L
 Use a 2.2k Resistor next to GND. If not, solder all 3 Jumper pads next to "Individual.GND Check", 
 & place a Led below the GND LED By-Pass, w/ 750r (Not a 2.2k resistor). Otherwise, for consistency use all Red, w/ 750r.
 
-The purpose of this is to verify the GND or shield on each individual RCA cable is intact. 
+The purpose of this is to verify the GND or shield on each individual RCA cable is intact. The 3 separate leds for GND, also allow for cross short testing. 
 
 # Parts
-1q 12mm x 12mm x 5mm Momentary Switch
+2-3q 12mm x 12mm x 5mm Momentary Switch
 
-10-13q 3mm Leds total (Use only Red) 
+11-14q SMD Leds total (Use only Red) : 1206
 
-10-11q 750r (Opt. 1q 2.2K): Type 0805 Resistors 
+11-12q 750r (Opt. 1q 2.2K): Type 0805 Resistors 
 
-4q rcj-011 (3 for In-Put and 1 for Out-Put)     
+2q 100r : Type 0805 Resistors 
+
+4q rcj-011 (3 for In-Put and 1 for Out-Put)   
+
+.1uf Capacitor : Type 1206 Capacitor
 
 1q ps1 slim av connector  
 
@@ -52,11 +51,13 @@ The purpose of this is to verify the GND or shield on each individual RCA cable 
 
 *Optional Components, with reasons listed below* 
 
-2q MAX40200AUK+T 
+4q MAX40200AUK+T 
 
-1q MCP-111-270, 1q .1uf Ceramic Capacitor, 1q 750r, & 1q 3mm LED
+1q MCP-111-270, circuit includes support parts listed above.
 
-1q Si2301 & 1k to 10k : Type 0805 Resistors 
+1q Si2301, Circuit includes support parts listed above.
+
+1q PESD3V3S2UT, Circuit includes support parts listed above.
 
 # Optional quality of life features, for safety & battery life.
 
@@ -64,17 +65,17 @@ They are as followed:
 
 # 1: Low Battery Warning Circuit
 
-Contains a MCP-111-270, .1uf Ceramic Capacitor, 750r Resistor & Modern 3mm Led
+Contains a MCP-111-270, .1uf (MLCC) : 1206 Capacitor, 750r Resistor : 0805 & Red Led : 1206
 
-When the battery drains down to about 2.63v, the led will light, indicating you should consider replaced the battery
+When the battery drains down to about 2.63v, the led will light, indicating you should consider replaced the battery.
 
-# 2: Back Feeding Protection 
+# 2: Back Feeding Protection, with ESD Protection listed below # 5.
 
 Two MAX40200AUK+T are ideal diodes, to prevent the mistake of inserting a PS1 or Snes AV Cable into the lower Output only RCA port. 
 
-Preventing the signal from back feeding into the device. 
+Preventing the signal from back feeding into the device. No By-pass pad was installed on this section.
 
-These replaced the 1n5817 or SS12 Diodes, due to the desire to increase the headroom for the Low Battery Warning Circuit. As they consumed to much current. 
+The MAX40200AUK+T replaced the 1n5817 or SS12 Diodes from previous design, due to the desire to increase the headroom for the Low Battery Warning Circuit. As they consumed to much current. 
 
 # 3: Revere Polarity Protection
 
@@ -84,11 +85,28 @@ The idea here is that if a battery is installed in reverse, this will protect th
 
 In addition to protecting other components.
 
+# 4: Cross Short detection
+
+The remaining two MAX40200AUK+T in combination with momentary switch 2 and 3. Are used to cause Forward Voltage Issue. As described in the intent listed at the very top of the repository. 
+
+# 5: Anti Static protection
+
+The use of a PESD3V3S2UT {a uni-directional double ESD (ElectroStatic Discharge) protection diode array} that is connected to the out-put rca phono jack on the bottom right. Though this maybe overkill. I figured that portion of the circuit is directly connected to the first two MAX40200AUK+T. I would add a bit of protection. In addition to the two 100r resistor that are in series between the Phono Jack and PESD3V...
+
 
 # Legacy Files, 
 
 For Legacy reason I'm leaving the following up. 
-Though everything works. I've update the design to be more robust in the above version.
+
+Though everything works up to 1.2.9. I've update the design to be more robust in the above version.
+
+Mini v1.3.X HAD DEFECTS, I removed the Zip file due to missing traces and i've moved on through several changes. Please look above for the status of the newest board design.
+
+Parts, instructions, description below
+
+<img width="1918" height="892" alt="Mini v1 3 x" src="https://github.com/user-attachments/assets/9e7004cc-74eb-4cfd-9e4c-df278eba1ac2" />
+<img width="1918" height="892" alt="Mini v1 3 x1" src="https://github.com/user-attachments/assets/91ee9bc2-8cb2-4f98-ba75-e992bfd2ffc0" />
+
 
 Simple Portable Continuity Tester for Testing RCA, SNES Style, PS1 Style AV Cables
 Mini 1.2.1 through to 1.2.9. 
@@ -96,9 +114,7 @@ Mini 1.2.1 through to 1.2.9.
 1.2.9 is probably the best version, however this version is what led me to discover not all 3mm leds are really 3mm leds and can be larger that 3.2mm round. 
 So 1.3.x was designed with this in mind. Plus the added protection for the chance of human error.
 
-
 Project design is still being tested.
-
 The goal is this can fit in a pocket, weigh less than 100grams. Regardless of where you are. At your bench, a flea market, or used store. You want to be able to verify if a AV cable works.
 
 This version will focus on RCA Phono cables, Nintendo SNES N64 NGC and PlayStation PS1 PS2 PS3 AV Cables.
