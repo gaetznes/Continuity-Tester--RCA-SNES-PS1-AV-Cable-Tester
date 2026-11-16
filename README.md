@@ -105,7 +105,9 @@ You will solder the jumper (Reverse Polarity Protection By-Pass) on the back of 
 
 Then solder 1 momentary switch for on/off function, SW1. Solder the jumper (Cross Short By-Pass Jumper) within the SW2 footprint.
 
-Solder 4 resistors next to C.Video, A.R, A.L and GND. Solder 4 Red Leds next to them. Then solder 3 Right Angle RCA Jacks at the top of the board.
+Solder 4 resistors next to C.Video, A.R, A.L and GND. Solder 4 Red Leds next to them. 
+
+Then solder all 3 jumpers next to Ind. GND Check. After that solder in the 3 Right Angle RCA Jacks above the pads, at the top of the board.
 
 Finally install the battery and apply your conformal coating. Make sure to tape off you buttons, rca ports and snes edge connector. Preferable your leds as well. Only do so after it's been tested working. 
 
