@@ -2,6 +2,8 @@
 
 Portable Continuity Tester w/ Protection (Ordered and waiting to test)
 
+# In Progress developement
+
 I'm currently work on a v1.6, Changing more of the THT to SMD, adding 2 more MAX40200 and 2x momentary buttons to create a cross-short test. 
 
 The Cross Short Test makes sure that the GND line and Signal line are not shorting. The two max40200 acts as a switch to cut either the GND or Signal test voltage from reaching the led. The goal is to introduce a forward voltage problem. Where the 2032 battery (Nominally around 2.8-3v) can not power 2 led's in series. As it would need about 3.6-4v, and is more that what a fresh 2032 can provide. So realistically, the Siginal Only switch is required for this. Though, I left in the GND only there incase it proves useful in the future.
